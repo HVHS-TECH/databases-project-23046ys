@@ -263,7 +263,15 @@ function draw() {
         text("Game Over", windowWidth / 2, windowHeight / 2);
         text("Score=" + score, windowWidth / 2, windowHeight / 2 + 50);
         
-        
+        if(GLOBAL_user == null){
+
+        }else{
+            firebase.database().ref('/Users/'+GLOBAL_user.uid).update({
+
+                "Game1 Score": score
+
+            })
+        }
         
     }
 

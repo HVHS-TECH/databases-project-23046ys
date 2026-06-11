@@ -19,7 +19,22 @@
 </head>
 
 <body>
-  <button onclick="fb_login()">Login with Google</button>
+
+    <h1>Title</h1>
+    <button onclick="fb_login()">Login with Google</button>
+
+    <form id="userDetailsForm">
+
+      <label for="gamename">Game Name</label>
+       <input type="text" id="gameName" name="gameName" required />
+
+       <label for="">Age</label>
+       <input type="text" id="age" name="age" required />
+
+    </form>
+        <button onclick="submitDetails()">Submit</button>
+
+  
 </body>
 
 </html>
