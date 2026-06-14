@@ -5,7 +5,9 @@ function submitDetails(){
         "Game Name":gameName,
         "Age":age,
         "Display Name":GLOBAL_user.displayName,
-        "Email":GLOBAL_user.email
+        "Email":GLOBAL_user.email,
+        "Game1 Score": 0,
+        "Game2 Score":0
 
      })
 }
