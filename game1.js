@@ -266,6 +266,7 @@ function draw() {
         if(GLOBAL_user == null){
 
         }else{
+            
             firebase.database().ref('/Users/'+GLOBAL_user.uid).update({
 
                 "Game1 Score": score
