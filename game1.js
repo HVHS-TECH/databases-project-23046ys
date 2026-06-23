@@ -32,7 +32,7 @@ var enemyLeaveSpeed = 1;
 /*******************************************************/
 
 
-
+fb_login()
 
 function setup() {
     console.log("setup: ");

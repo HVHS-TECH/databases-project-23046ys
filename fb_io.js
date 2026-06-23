@@ -17,7 +17,7 @@ var GLOBAL_user;
         GLOBAL_user = _user;//Save the user details object to a global variable
         console.log(GLOBAL_user.uid)
         console.log(GLOBAL_user)
-        alert("Welcome"+GLOBAL_user.displayName)
+        alert("Welcome "+GLOBAL_user.displayName)
     } else {
         console.log("User is NOT logged in - Starting the popup process")
         fb_popupLogin();

@@ -8,6 +8,8 @@
 /*******************************************************/
 console.log("Running the game");
 
+fb_login()
+
 
 // End game code
 function endGame(_player, _obstacle){
