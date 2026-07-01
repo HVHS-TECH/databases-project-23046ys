@@ -272,6 +272,13 @@ function draw() {
                 "Game1 Score": score
 
             })
+
+            firebase.database().ref('/Game 1/'+GLOBAL_user.uid).update({
+
+                score
+
+            })
+
         }
         
     }

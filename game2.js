@@ -19,7 +19,20 @@ function endGame(_player, _obstacle){
     obstacles.removeAll();
     // Put your database writes here:
 
+    if(GLOBAL_user == null){
 
+         }else{
+                firebase.database().ref('/Users/'+GLOBAL_user.uid).update({
+
+                    "Game2 Score": score
+
+                })
+                firebase.database().ref('/Game 1/'+GLOBAL_user.uid).update({
+
+                    score
+
+                })
+        }
 
 }
 
@@ -167,15 +180,7 @@ function endScreen(){
     textSize(14);
     text("press any key to restart", 50, 150);
 
-    if(GLOBAL_user == null){
-
-        }else{
-            firebase.database().ref('/Users/'+GLOBAL_user.uid).update({
-
-                "Game2 Score": score
-
-            })
-        }
+    
 }
 
 function resetGame(){
